@@ -12,6 +12,9 @@ zapAddOn {
                 register("commonlib") {
                     version.set(">= 1.32.0 & < 2.0.0")
                 }
+                register("oast") {
+                    version.set(">= 0.7.0")
+                }
             }
         }
     }
@@ -23,6 +26,7 @@ tasks.named("compileJava") {
 
 dependencies {
     zapAddOn("commonlib")
+    zapAddOn("oast")
 
     testImplementation(project(":testutils"))
 }
